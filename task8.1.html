@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+    grid-template-rows: auto auto 1fr auto; /* Dynamic rows */
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / 5;
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.small-box-1 {
+    border-radius: 5%;
+    grid-column: 1 / 2;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px;
+}
+
+.small-box-2 {
+    border-radius: 5%;
+    grid-column: 2 / 3;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 20px;
+}
+
+.small-box-3 {
+    grid-column: 3 / 4;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar {
+    border-radius: 1%;
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    border-radius: 10%;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.footer {
+    grid-column: 1 / 5;
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: 20px;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="box small-box-1">Small box</div>
+        <div class="box small-box-2">Small box</div>
+        <div class="box small-box-3">Small box</div>
+        <aside class="sidebar">Side Bar</aside>
+        <main class="main-content">Main content</main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #header, #footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+            min-height: 89vh;
+        }
+        #sidebar {
+            background: #f4f4f4;
+            padding: 1em;
+        }
+        #main-content {
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        Header
+    </div>
+    <div id="container">
+        <div id="sidebar">
+            <b>Sidebar</b><br><br>
+            The Menu or quick access content
+        </div>
+        <div id="main-content">
+            <b>Main Content</b><br><br>
+            The core web content should be displayed here
+        </div>
+    </div>
+    <div id="footer">
+        Footer
+    </div>
+</body>
+</html>

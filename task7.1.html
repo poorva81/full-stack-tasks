@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Layout - Flexbox</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333;
+        }
+        .area{
+            height: 50px;
+            width: 96%;
+            background-color: #7a7a7a;
+        }
+        .calculator {
+            display: flex;
+            flex-wrap: wrap;
+            width: 320px;
+            background-color: white;
+            /* padding: 10px; */
+            border: 5px solid #ccc;
+        }
+
+        .calculator button {
+            width: 23%;
+            height: 60px;
+            font-size: 20px;
+            margin: 2px;
+            border: none;
+            /* cursor: pointer; */
+        }
+
+        /* Button styles */
+        .number {
+            background-color: #7a7a7a;
+            color: white;
+        }
+
+        .operator {
+            background-color: #f1a100;
+            color: white;
+        }
+
+        .clear {
+            background-color: #e05b56;
+            color: white;
+        }
+
+        .equals {
+            background-color: #3c9f3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- Numbers -->
+         <div class="area"></div>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">+</button>
+
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">-</button>
+
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">X</button>
+
+        <!-- Clear and zero buttons -->
+        <button class="clear double-span">C</button>
+        <button class="number">0</button>
+        <button class="equals double-span">=</button>
+        <button class="operator">/</button>
+    </div>
+
+</body>
+</html>

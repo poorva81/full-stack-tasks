@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* Tag selector (lowest specificity) */
+p {
+    color: blue;
+}
+
+/* Class selector (medium specificity) */
+.highlight {
+    color: green;
+    font-weight: bold;
+}
+
+/* ID selector (highest specificity) */
+#important {
+    color: red;
+    font-size: 20px;
+}
+
+/* Styling the list with a tag selector */
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Specificity Example</h1>
+
+    <p class="highlight" id="important">This paragraph has both an ID and a class.</p>
+    <p class="highlight">This paragraph only has a class.</p>
+    <p>This paragraph has no class or ID.</p>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+</body>
+</html>

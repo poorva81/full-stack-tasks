@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// a. Convert a string input to a number using Number()
+let strToNumInput = prompt("Enter a number as a string:");
+let numFromString = Number(strToNumInput);
+console.log(`The string "${strToNumInput}" converted to number:`, numFromString);
+
+// b. Convert a number to a string using String()
+let numInput = prompt("Enter a number:");
+let strFromNum = String(numInput);
+console.log(`The number ${numInput} converted to string: "${strFromNum}"`);
+
+// c. Convert a string input to a boolean using Boolean()
+let strToBoolInput = prompt("Enter any string to convert to boolean (empty or non-empty):");
+let boolFromString = Boolean(strToBoolInput);
+console.log(`The string "${strToBoolInput}" converted to boolean:`, boolFromString);
+
+// d. Convert a boolean to a number
+let boolToNumInput = confirm("Click OK for true, Cancel for false (boolean)");
+let numFromBool = Number(boolToNumInput);
+console.log(`The boolean ${boolToNumInput} converted to number:`, numFromBool);</script>
+</body>
+</html>

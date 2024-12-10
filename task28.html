@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <button type="submit">Submit</button>
+        <p id="errorMessage" style="color: red;"></p>
+    </form>
+    <script>
+        const form = document.getElementById('myForm');
+        const email = document.getElementById('email');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', (e) => {
+            if (email.value.trim() === '') {
+                e.preventDefault(); // Prevent form submission
+                errorMessage.textContent = 'Email field cannot be empty!';
+            } else {
+                errorMessage.textContent = '';
+            }
+        });
+    </script>
+</body>
+<!-- </html>  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Focus and Blur Events</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Focus on me">
+    <script>
+        const inputField = document.getElementById('myInput');
+
+        inputField.addEventListener('focus', () => {
+            inputField.style.backgroundColor = 'pink';
+        });
+
+        inputField.addEventListener('blur', () => {
+            inputField.style.backgroundColor = '';
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Reset</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br>
+        <button type="reset">Reset</button>
+    </form>
+    <p id="confirmationMessage"></p>
+    <script>
+        const form = document.getElementById('myForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        form.addEventListener('reset', () => {
+            confirmationMessage.textContent = 'The form has been reset.';
+        });
+    </script>
+</body>
+</html>

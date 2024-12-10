@@ -1,0 +1,35 @@
+
+body {
+    background-color: #f0f8ff; /* Light blue */
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+}
+
+/* Headings styles */
+h1 {
+    color: darkblue;
+    font-size: 36px;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 30px;
+}
+
+h3 {
+    color: darkred;
+    font-size: 24px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Div container styles */
+div {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

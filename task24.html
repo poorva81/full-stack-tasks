@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <style>
+    .dynamic-paragraph {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+  <button id="colorButton">Click Me</button>
+
+  <script>
+    // Create and append headings
+    let heading1 = document.createElement('h1');
+    heading1.textContent = 'Welcome to DOM';
+    document.getElementById('content').appendChild(heading1);
+
+    let heading2 = document.createElement('h2');
+    heading2.textContent = 'LET us Learn';
+    document.getElementById('content').appendChild(heading2);
+
+    // Create and append paragraphs
+    for (let i = 1; i <= 5; i++) {
+      let para = document.createElement('p');
+      para.className = 'dynamic-paragraph';
+      para.textContent = `This is paragraph ${i}`;
+      document.getElementById('content').appendChild(para);
+    }
+
+    // Retrieve content using querySelector and querySelectorAll
+    let firstParagraph = document.querySelector('.dynamic-paragraph');
+    console.log('First Paragraph:', firstParagraph.textContent);
+
+    let allParagraphs = document.querySelectorAll('.dynamic-paragraph');
+    allParagraphs.forEach((para, index) => {
+      console.log(`Paragraph ${index + 1}:`, para.textContent);
+    });
+
+    // Add event listener to button to change background color
+    const button = document.getElementById("colorButton");
+    
+    button.onclick = function () {
+      this.style.backgroundColor = "blue";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add and Remove Event Listener</title>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+
+  <script>
+    const button = document.getElementById("myButton");
+
+    function clickHandler() {
+      alert("Button clicked!");
+    }
+
+    // Add event listener
+    button.addEventListener("click", clickHandler);
+
+    // Remove event listener after 5 seconds
+    setTimeout(() => {
+      button.removeEventListener("click", clickHandler);
+      alert("Event listener removed.");
+    }, 5000);
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create and Add Div</title>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script>
+    // Create a new <div> element
+    const newDiv = document.createElement("div");
+
+    // Add text content
+    newDiv.innerText = "Hello World";
+
+    // Append the new <div> to the container
+    const container = document.getElementById("container");
+    container.appendChild(newDiv);
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add List Item</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Mango</li>
+    <li>Banana</li>
+  </ul>
+
+  <script>
+    // Create a new <li> element
+    const newListItem = document.createElement("li");
+
+    // Add text content to the <li>
+    newListItem.innerText = "Pineapple";
+
+    // Append the <li> to the existing <ul>
+    const list = document.getElementById("myList");
+    list.appendChild(newListItem);
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Class</title>
+  <style>
+    .active {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton">Activate Me</button>
+
+  <script>
+    const button = document.getElementById("myButton");
+
+    // Add the 'active' class to the button
+    button.classList.add("active");
+  </script>
+</body>
+</html>

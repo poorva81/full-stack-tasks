@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Manipulation & Colors with CSS</title>
+    <!-- Link to Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Open+Sans:wght@400;600&display=swap">
+    <style>
+        /* Text Manipulation Section */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .font-demo {
+            font-size: 18px;
+            font-weight: normal;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px;
+            color: #4CAF50;
+        }
+
+        /* Using Google Fonts */
+        .google-font {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 22px;
+            color: #ff5722;
+            text-decoration: underline;
+        }
+
+        /* Text Coloring Section */
+        .text-color-demo p {
+            margin: 5px;
+        }
+
+        .color-hex {
+            color: #FF6347; /* Tomato */
+        }
+
+        .color-rgb {
+            color: rgb(70, 130, 180); /* Steel Blue */
+        }
+
+        .color-hsl {
+            color: hsl(120, 60%, 50%); /* Green */
+        }
+
+        .color-named {
+            color: gold;
+        }
+
+        /* Background Manipulation Section */
+        .section-bg-color {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .section-bg-image {
+            background-image: url('http://ts2.mm.bing.net/th?id=OIP.DU-t0vf2O2F0EcKdoXRf1gHaEo&pid=15.1');
+            background-size: cover;
+            background-position: center;
+            height: 50px;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .section-bg-image p {
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Fonts and Text Manipulation Section -->
+    <h1>Fonts and Text Manipulation</h1>
+
+    <p class="font-demo">This is a demo of text manipulation with CSS.</p>
+
+    <p class="google-font">This text is using an external Google Font: Open Sans.</p>
+
+    <!-- Text Coloring Section -->
+    <h2>1: Coloring Text with Different Values</h2>
+    <div class="text-color-demo">
+        <p class="color-named">This is using a named color: Gold</p>
+        <p class="color-hex">This is using a HEX color: #FF6347 (Tomato)</p>
+        <p class="color-rgb">This is using an RGB color: rgb(70, 130, 180) (Steel Blue)</p>
+        <p class="color-hsl">This is using an HSL color: hsl(120, 60%, 50%) (Green)</p>
+    </div>
+
+    <!-- Background Section -->
+    <h2>2: Background Colors and Image</h2>
+    <div class="section-bg-color">
+        <p>This section has a light blue background color.</p>
+    </div>
+
+    <div class="section-bg-image">
+        <p>This section uses a background image from a URL.</p>
+    </div>
+
+</body>
+</html>

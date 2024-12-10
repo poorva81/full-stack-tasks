@@ -1,0 +1,222 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+    input {
+      margin-bottom: 10px;
+      display: block;
+      width: 200px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form id="registrationForm">
+    <input type="text" id="name" placeholder="Name">
+    <span class="error" id="nameError"></span>
+
+    <input type="email" id="email" placeholder="Email">
+    <span class="error" id="emailError"></span>
+
+    <input type="text" id="phone" placeholder="Phone (10 digits)">
+    <span class="error" id="phoneError"></span>
+
+    <input type="text" id="postalCode" placeholder="Postal Code (6 digits)">
+    <span class="error" id="postalCodeError"></span>
+
+    <input type="password" id="password" placeholder="Password">
+    <span class="error" id="passwordError"></span>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <span class="error" id="confirmPasswordError"></span>
+
+    <input type="text" id="city" placeholder="City">
+    <span class="error" id="cityError"></span>
+
+    <input type="text" id="state" placeholder="State">
+    <span class="error" id="stateError"></span>
+
+    <input type="text" id="address" placeholder="Address">
+    <span class="error" id="addressError"></span>
+
+    <input type="date" id="dob">
+    <span class="error" id="dobError"></span>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("registrationForm");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      // Reset errors
+      document.querySelectorAll(".error").forEach(error => error.innerText = "");
+
+      let isValid = true;
+
+      // Name validation
+      const name = document.getElementById("name").value.trim();
+      if (!name) {
+        document.getElementById("nameError").innerText = "Name is required.";
+        isValid = false;
+      }
+
+      // Email validation
+      const email = document.getElementById("email").value.trim();
+      if (!email.includes("@") || !email.includes(".")) {
+        document.getElementById("emailError").innerText = "Enter a valid email.";
+        isValid = false;
+      }
+
+      // Phone validation
+      const phone = document.getElementById("phone").value.trim();
+      if (phone.length !== 10 || isNaN(phone)) {
+        document.getElementById("phoneError").innerText = "Phone must be 10 digits.";
+        isValid = false;
+      }
+
+      // Postal code validation
+      const postalCode = document.getElementById("postalCode").value.trim();
+      if (postalCode.length !== 6 || isNaN(postalCode)) {
+        document.getElementById("postalCodeError").innerText = "Postal code must be 6 digits.";
+        isValid = false;
+      }
+
+      // Password validation
+      const password = document.getElementById("password").value.trim();
+      if (password.length < 6) {
+        document.getElementById("passwordError").innerText = "Password must be at least 6 characters.";
+        isValid = false;
+      }
+
+      // Confirm password validation
+      const confirmPassword = document.getElementById("confirmPassword").value.trim();
+      if (confirmPassword !== password) {
+        document.getElementById("confirmPasswordError").innerText = "Passwords do not match.";
+        isValid = false;
+      }
+
+      // City validation
+      const city = document.getElementById("city").value.trim();
+      if (!city) {
+        document.getElementById("cityError").innerText = "City is required.";
+        isValid = false;
+      }
+
+      // State validation
+      const state = document.getElementById("state").value.trim();
+      if (!state) {
+        document.getElementById("stateError").innerText = "State is required.";
+        isValid = false;
+      }
+
+      // Address validation
+      const address = document.getElementById("address").value.trim();
+      if (!address) {
+        document.getElementById("addressError").innerText = "Address is required.";
+        isValid = false;
+      }
+
+      // Date of Birth validation
+      const dob = document.getElementById("dob").value.trim();
+      if (!dob) {
+        document.getElementById("dobError").innerText = "Date of birth is required.";
+        isValid = false;
+      }
+
+      // If all fields are valid
+      if (isValid) {
+        alert("Form successfully submitted!");
+      }
+    });
+  </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Paragraph Text</title>
+</head>
+<body>
+  <p id="description">Original text in the paragraph.</p>
+  <button onclick="update()">Change</button>
+  <script>
+    function update(){
+    const paragraph = document.querySelector("#description");
+    paragraph.innerText = "Updated text in the paragraph using querySelector.";}
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color</title>
+</head>
+<body>
+  <div class="highlight">Highlight 1</div>
+  <div class="highlight">Highlight 2</div>
+  <div class="highlight">Highlight 3</div>
+  <button onclick="highlight()">Highlight</button>
+  <script>
+    function highlight(){
+    const elements = document.querySelectorAll(".highlight");
+    elements.forEach(element => {
+      element.style.backgroundColor = "yellow";
+    });}
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Input Value</title>
+</head>
+<body>
+  <input type="text" id="userInput">
+  <script>
+    const input = document.querySelector("#userInput");
+    input.value = "Poorva ";
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log List Items</title>
+</head>
+<body>
+  <ul class="items">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <script>
+    const listItems = document.querySelectorAll("ul.items li");
+    listItems.forEach((item, index) => {
+      console.log(`List item ${index + 1}: ${item.innerText}`);
+    });
+  </script>
+</body>
+</html>
